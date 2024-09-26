@@ -1,0 +1,9 @@
+Instalar extensiones:
+    typescript snippets (John Papa)
+    javascript and typescript nightly (Microsoft)
+    typescript importer (pmneo)
+
+Crear nuevo proyecto:
+    ng new "Nombre"
+    ng serve -o
+    
