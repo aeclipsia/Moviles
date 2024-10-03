@@ -1,0 +1,11 @@
+<div class="main" *ngFor="let p of list">
+    <p>Información sobre {{p.nombre}}</p>
+    <hr>
+    <p>Asignatura: {{p.asignatura}}</p>
+    <p>Nota: {{p.nota}}</p>
+    <p *ngIf="p.nota>=5; else suspenso">Aprobado</p>
+    <ng-template #suspenso>Suspenso</ng-template>
+</div>
+
+<p *ngIf="nota>=5">Aprobado</p>
+<p *ngIf="nota<5">Suspenso</p>

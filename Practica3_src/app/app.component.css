@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+}
+
+h1{
+    width: 100vw;
+    height: 5rem;
+    align-items: center;
+    background-color: black;
+    color: whitesmoke;
+    font-family: sans-serif;
+    text-align: left;
+}

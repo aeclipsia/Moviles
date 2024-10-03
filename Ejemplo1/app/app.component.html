@@ -1,0 +1,21 @@
+<h2>Ejemplo paso de datos del componente</h2>
+<hr>
+<!-- Escribir directamente -->
+<p>Tu nombre: {{nombre}} </p>
+<p>Tu edad: {{edad}}</p>
+<hr>
+<!-- Ecribir valor en un control de una clase HTML -->
+<form>
+  <label for="name">Nombre:</label><br>
+  <input type="text" name="name" id="txtName" [value]="nombre"><br>
+  <label for="age">Edad:</label><br>
+  <input type="text" name="age" id="txtAge" [value]="edad">
+</form>
+<hr>
+<!-- Double binding -->
+<form>
+  <label for="name">Nombre:</label><br>
+  <input type="text" name="name" id="txtName" [(ngModel)]="nombre"><br>
+  <label for="age">Edad:</label><br>
+  <input type="text" name="age" id="txtAge" [(ngModel)]="edad">
+</form>

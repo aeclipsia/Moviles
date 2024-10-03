@@ -1,0 +1,8 @@
+.main{
+    margin: 2rem 0.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgb(124, 124, 124);
+    width: fit-content;
+}

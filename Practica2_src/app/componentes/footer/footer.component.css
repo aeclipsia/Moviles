@@ -1,0 +1,9 @@
+p {
+    display: block;
+    text-align: right;
+    height: 5rem;
+    width: 100%;
+    background-color: #b8b8b8;
+    clear: both;
+    margin: auto 0 0 0;
+}
