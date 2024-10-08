@@ -1,19 +1,106 @@
-.main{
-    display: flex;
-    justify-content: space-around;
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 30px;
+    background-color: #181818;
+    justify-content: center;
 }
 
-h1{
-    font-family: sans-serif;
-    font-size: 3rem;
+.pelis {
+    position: relative;
+    background-color: #282828;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
-h2{
-    font-family: sans-serif;
-    font-size: 1.5rem;
+.pelis:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
 }
 
-img{
-    width: 20rem;
-    height: auto;
+.pelis img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+    border-radius: 12px 12px 0 0;
+}
+
+.pelis:hover img {
+    filter: brightness(40%);
+}
+
+.pelis h1,
+.pelis h2 {
+    color: #fff;
+    font-family: 'Roboto';
+    margin: 0;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+   
+}
+
+.pelis h1 {
+    font-size: 1.4em;
+    font-weight: 500;
+    position: absolute;
+    bottom: 10%;
+   
+    left: 50%;
+    transform: translateX(-50%);
+   
+}
+
+.pelis h2 {
+    font-size: 1em;
+    color: #b3b3b3;
+    font-weight: 300;
+    position: absolute;
+    top: 10%;
+   
+    left: 50%;
+    transform: translateX(-50%);
+   
+}
+
+.pelis:hover h1,
+.pelis:hover h2 {
+    opacity: 1;
+}
+
+.pelis::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+   
+}
+
+.pelis:hover::before {
+    opacity: 1;
+}
+
+.main::-webkit-scrollbar {
+    width: 8px;
+}
+
+.main::-webkit-scrollbar-thumb {
+    background: #e50914;
+    border-radius: 10px;
+}
+
+.main::-webkit-scrollbar-track {
+    background: #141414;
 }
