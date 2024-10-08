@@ -1,0 +1,9 @@
+<div class="input-group mb-3">
+    <button class="label">Nombre</button>
+    <input class="field" type="text" [(ngModel)]="input_nombre">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon1" (click)="addPersona()">Button</button>
+</div>
+
+<ul>
+    <li class="nombre_list" *ngFor="let n of list">{{n}}</li>
+</ul>
