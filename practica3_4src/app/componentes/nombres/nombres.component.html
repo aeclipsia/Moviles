@@ -1,9 +1,11 @@
-<div class="input-group mb-3">
-    <button class="label">Nombre</button>
-    <input class="field" type="text" [(ngModel)]="input_nombre">
-    <button class="btn btn-outline-secondary" type="button" id="button-addon1" (click)="addPersona()">Button</button>
-</div>
+<div class="parent-container">
+    <div class="custom-input-group">
+        <label class="custom-label" for="nameInput">Nombre</label>
+        <input class="custom-input" type="text" id="nameInput" [(ngModel)]="input_nombre"/>
+        <button class="custom-btn" type="button" id="button-addon1" (click)="addPersona()">Add</button>
+    </div>
 
-<ul>
-    <li class="nombre_list" *ngFor="let n of list">{{n}}</li>
-</ul>
+    <ul class="nombre-list">
+        <li class="nombre-item" *ngFor="let n of list">{{ n }}</li>
+    </ul>
+</div>
