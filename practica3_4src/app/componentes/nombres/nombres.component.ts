@@ -4,8 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-nombres',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
+  standalone: false,
   templateUrl: './nombres.component.html',
   styleUrl: './nombres.component.css'
 })
@@ -18,7 +17,19 @@ export class NombresComponent {
   addPersona() {
     if(this.input_nombre.trim()){
       this.list.push(this.input_nombre);
-      this.input_nombre="";
     }
+    this.resetInput();
+  }
+  
+  removePersona(){
+    let x = this.list.indexOf(this.input_nombre)
+    if(x!=-1){
+      this.list.splice(x,1)
+    }
+    this.resetInput();
+  }
+
+  resetInput(){
+    this.input_nombre="";
   }
 }

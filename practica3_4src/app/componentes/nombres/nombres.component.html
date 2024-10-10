@@ -1,8 +1,9 @@
 <div class="parent-container">
-    <div class="custom-input-group">
-        <label class="custom-label" for="nameInput">Nombre</label>
+    <div class="input-group">
+        <label class="label" for="nameInput">Nombre</label>
         <input class="custom-input" type="text" id="nameInput" [(ngModel)]="input_nombre"/>
-        <button class="custom-btn" type="button" id="button-addon1" (click)="addPersona()">Add</button>
+        <button class="btn add" type="button" id="button-addon1" (click)="addPersona()">Add</button>
+        <button class="btn remove" type="button" id="button-addon1" (click)="removePersona()">Remove</button>
     </div>
 
     <ul class="nombre-list">
