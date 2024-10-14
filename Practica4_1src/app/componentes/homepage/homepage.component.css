@@ -1,0 +1,58 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2023/05/23155417/Wheel-of-Time-Season-2-Perrin.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.content {
+    text-align: left;
+    color: #ffffff;
+    max-width: 500px;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.watch-button {
+    background-color: #e50914;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+}
+
+.watch-button:hover {
+    background-color: #b20710;
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}

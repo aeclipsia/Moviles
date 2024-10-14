@@ -1,8 +1,9 @@
+/* Navbar Styling */
 .navbar {
     background-color: #141414;
-    height: 10vh;
+    height: 70px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
@@ -11,9 +12,10 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
+/* DAWFlix Logo */
 .navbar-brand {
     color: #e50914;
-    font-size: 4rem;
+    font-size: 2rem;
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -28,21 +30,44 @@
     transform: scale(1.1);
 }
 
-.navbar-menu{
+/* Navigation Menu */
+.nav-menu {
+    list-style: none;
     display: flex;
-    justify-content: space-around;
-    width: 30vw;
+    gap: 30px;
 }
 
-.menu-items{
-    font-family: 'Bebas Neue';
-    text-decoration: none;
+.nav-item {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif; /* Use Poppins for menu items */
+}
+
+.nav-item a {
     color: #ffffff;
-    font-size: 2rem;
-    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 10px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
 }
 
-.menu-items:hover{
-    translate: 0% -10%;
+.nav-item a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #e50914;
+    bottom: -3px;
+    left: 0;
+    transition: width 0.3s ease; /* Smooth underline transition */
+}
+
+.nav-item a:hover::before {
+    width: 100%;
+}
+
+.nav-item a:hover {
     color: #e50914;
+    transform: scale(1.05); /* Consistent scaling effect on hover */
 }
