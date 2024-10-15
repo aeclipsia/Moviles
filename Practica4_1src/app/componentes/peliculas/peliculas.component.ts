@@ -158,6 +158,12 @@ export class PeliculasComponent {
         year: 2021,
         image: "assets/pelis/encanto.jpg"
       }
-    ];    
+    ];
+  }
+
+  currentPelicula:any=null
+
+  show(p:any){
+      this.currentPelicula=p
   }
 }
