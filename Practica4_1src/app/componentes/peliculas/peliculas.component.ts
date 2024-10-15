@@ -18,145 +18,145 @@ export class PeliculasComponent {
         titulo: "Inside Out 2",
         director: "Kelsey Mann",
         year: 2024,
-        image: "assets/inside-out.jpg"
+        image: "assets/pelis/inside-out.jpg"
       },
       {
         titulo: "The Little Mermaid",
         director: "Ron Clements, John Musker",
         year: 1989,
-        image: "assets/mermaid.jpg"
+        image: "assets/pelis/mermaid.jpg"
       },
       {
         titulo: "Beauty and the Beast",
         director: "Gary Trousdale, Kirk Wise",
         year: 1991,
-        image: "assets/beast.jpg"
+        image: "assets/pelis/beast.jpg"
       },
       {
         titulo: "Toy Story",
         director: "John Lasseter",
         year: 1995,
-        image: "assets/toy-story.jpeg"
+        image: "assets/pelis/toy-story.jpeg"
       },
       {
         titulo: "Monsters, Inc.",
         director: "Pete Docter, David Silverman, Lee Unkrich",
         year: 2001,
-        image: "assets/monsters.jpeg"
+        image: "assets/pelis/monsters.jpeg"
       },
       {
         titulo: "Mulan",
         director: "Tony Bancroft, Barry Cook",
         year: 1998,
-        image: "assets/mulan.jpg"
+        image: "assets/pelis/mulan.jpg"
       },
       {
         titulo: "Aladdin",
         director: "Ron Clements, John Musker",
         year: 1992,
-        image: "assets/aladdin.jpg"
+        image: "assets/pelis/aladdin.jpg"
       },
       {
         titulo: "Frozen",
         director: "Chris Buck, Jennifer Lee",
         year: 2013,
-        image: "assets/frozen.jpg"
+        image: "assets/pelis/frozen.jpg"
       },
       {
         titulo: "The Lion King",
         director: "Roger Allers, Rob Minkoff",
         year: 1994,
-        image: "assets/lion.jpg"
+        image: "assets/pelis/lion.jpg"
       },
       {
         titulo: "Coco",
         director: "Lee Unkrich, Adrian Molina",
         year: 2017,
-        image: "assets/coco.jpg"
+        image: "assets/pelis/coco.jpg"
       },
       {
         titulo: "Finding Nemo",
         director: "Andrew Stanton",
         year: 2003,
-        image: "assets/nemo.jpg"
+        image: "assets/pelis/nemo.jpg"
       },
       {
         titulo: "Ratatouille",
         director: "Brad Bird, Jan Pinkava",
         year: 2007,
-        image: "assets/ratatouille.jpg"
+        image: "assets/pelis/ratatouille.jpg"
       },
       {
         titulo: "Moana",
         director: "Ron Clements, John Musker",
         year: 2016,
-        image: "assets/moana.jpg"
+        image: "assets/pelis/moana.jpg"
       },
       {
         titulo: "Up",
         director: "Pete Docter",
         year: 2009,
-        image: "assets/up.jpg"
+        image: "assets/pelis/up.jpg"
       },
       {
         titulo: "Brave",
         director: "Mark Andrews, Brenda Chapman",
         year: 2012,
-        image: "assets/brave.jpg"
+        image: "assets/pelis/brave.jpg"
       },
       {
         titulo: "The Incredibles",
         director: "Brad Bird",
         year: 2004,
-        image: "assets/incredibles.jpg"
+        image: "assets/pelis/incredibles.jpg"
       },
       {
         titulo: "Tangled",
         director: "Nathan Greno, Byron Howard",
         year: 2010,
-        image: "assets/tangled.jpg"
+        image: "assets/pelis/tangled.jpg"
       },
       {
         titulo: "The Jungle Book",
         director: "Wolfgang Reitherman",
         year: 1967,
-        image: "assets/mowgli.jpg"
+        image: "assets/pelis/mowgli.jpg"
       },
       {
         titulo: "Lilo & Stitch",
         director: "Chris Sanders, Dean DeBlois",
         year: 2002,
-        image: "assets/lilo.jpg"
+        image: "assets/pelis/lilo.jpg"
       },
       {
         titulo: "Zootopia",
         director: "Byron Howard, Rich Moore",
         year: 2016,
-        image: "assets/zootopia.jpg"
+        image: "assets/pelis/zootopia.jpg"
       },
       {
         titulo: "The Princess and the Frog",
         director: "Ron Clements, John Musker",
         year: 2009,
-        image: "assets/frog.jpg"
+        image: "assets/pelis/frog.jpg"
       },
       {
         titulo: "Frozen II",
         director: "Chris Buck, Jennifer Lee",
         year: 2019,
-        image: "assets/frozen2.jpg"
+        image: "assets/pelis/frozen2.jpg"
       },
       {
         titulo: "Wreck-It Ralph",
         director: "Rich Moore",
         year: 2012,
-        image: "assets/ralph.jpg"
+        image: "assets/pelis/ralph.jpg"
       },
       {
         titulo: "Encanto",
         director: "Jared Bush, Byron Howard",
         year: 2021,
-        image: "assets/encanto.jpg"
+        image: "assets/pelis/encanto.jpg"
       }
     ];    
   }

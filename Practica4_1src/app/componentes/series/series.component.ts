@@ -18,37 +18,37 @@ export class SeriesComponent {
         titulo: "Stranger Things",
         director: "The Duffer Brothers",
         year: 2016,
-        image: "assets/stranger-things.jpg"
+        image: "assets/series/stranger.jpg"
       },
       {
         titulo: "Naruto",
         director: "Masashi Kishimoto",
         year: 2002,
-        image: "assets/naruto.jpg"
+        image: "assets/series/naruto.jpg"
       },
       {
         titulo: "Attack on Titan",
         director: "Tetsurō Araki",
         year: 2013,
-        image: "assets/attack-on-titan.jpg"
+        image: "assets/series/aot.jpg"
       },
       {
         titulo: "The Mandalorian",
         director: "Jon Favreau",
         year: 2019,
-        image: "assets/mandalorian.jpg"
+        image: "assets/series/mandalorian.jpg"
       },
       {
         titulo: "Avatar: The Last Airbender",
         director: "Michael Dante DiMartino, Bryan Konietzko",
         year: 2005,
-        image: "assets/avatar.jpg"
+        image: "assets/series/avatar.jpg"
       },
       {
         titulo: "SpongeBob SquarePants",
         director: "Stephen Hillenburg",
         year: 1999,
-        image: "assets/spongebob.jpg"
+        image: "assets/series/spongebob.jpg"
       },
       {
         titulo: "Dragon Ball Z",
