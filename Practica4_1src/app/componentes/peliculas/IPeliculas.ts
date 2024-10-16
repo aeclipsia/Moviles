@@ -3,4 +3,6 @@ export interface IPeliculas {
     director: string;
     year: number;
     image: string;
+    plot: string;
+    rating: number;
 }

@@ -6,8 +6,23 @@
     </div>
     <div class="overlay" *ngIf="currentPelicula"></div>
     <div class="movie-card" *ngIf="currentPelicula">
-        <h1>{{currentPelicula.titulo}} ({{currentPelicula.year}})</h1>
-        <h2>{{currentPelicula.director}}</h2>
         <img class="movie-img-card" [src]="currentPelicula.image">
+        <div class="movie-details">
+            <button class="close-btn" (click)="closeCard()"><i class="fa-regular fa-circle-xmark"></i></button>
+            <div class="movie-heading">
+                <h1>{{currentPelicula.titulo}}</h1>
+                <div class="rating">
+                    <h1>{{currentPelicula.rating}}</h1>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="movie-subheading">
+                <h2>{{currentPelicula.year}}</h2>|
+                <h2>{{currentPelicula.director}}</h2>
+            </div>
+            <div class="synopsis">
+                {{currentPelicula.plot}}
+            </div>
+        </div>
     </div>
 </div>
