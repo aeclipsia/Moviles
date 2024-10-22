@@ -1,9 +1,9 @@
 <div class="main">
-    <div class="pelis" *ngFor="let p of list" (click)="show(p)">
+    <div class="pelis" *ngFor="let p of list; let i = index" (click)="show(p, i)">
         <h1>{{p.titulo}} ({{p.year}})</h1>
         <h2>{{p.director}}</h2>
         <img src="{{p.image}}">
-    </div>
+    </div>  
     <div class="overlay" *ngIf="currentPelicula"></div>
     <div class="movie-card" *ngIf="currentPelicula">
         <img class="movie-img-card" [src]="currentPelicula.image">
@@ -22,6 +22,10 @@
             </div>
             <div class="synopsis">
                 {{currentPelicula.plot}}
+                Index:{{currentIndex}}
+            </div>
+            <div class="mas-info">
+                <a [routerLink]="['/pelis',currentIndex]" class="mas-info-link">Más Información</a>
             </div>
         </div>
     </div>

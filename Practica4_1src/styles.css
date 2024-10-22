@@ -7,6 +7,7 @@
 html {
     scrollbar-width: medium;
     scrollbar-color: #8B2F2F #1a1a1a;
+    overflow-y: hidden;
 }
 
 

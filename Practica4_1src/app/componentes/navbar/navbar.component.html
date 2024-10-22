@@ -3,8 +3,6 @@
     DAWFlix
   </div>
   <ul class="nav-menu">
-    <li class="nav-item"><a routerLink="/">Inicio</a></li>
-    <li class="nav-item"><a routerLink="/series">Series</a></li>
-    <li class="nav-item"><a routerLink="/pelis">Películas</a></li>
+    <li *ngFor="let i of objetos" class="nav-item"><a [routerLink]="[i.link_route]">{{i.link_name}}</a></li>
   </ul>
 </nav>
