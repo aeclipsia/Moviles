@@ -1,0 +1,132 @@
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .navbar-trigger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    z-index: 1001;
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(180deg, 
+      rgba(21, 48, 47, 0.9) 0%,
+      rgba(72, 132, 113, 0.2) 60%,
+      rgba(83, 102, 73, 0) 100%
+    );
+    transition: transform 0.3s ease;
+  }
+
+  .navbar-container.scrolled .navbar {
+    transform: translateY(-100%);
+  }
+
+  .navbar-container.scrolled .navbar-trigger {
+    display: block;
+  }
+
+  .navbar-container.scrolled:hover .navbar {
+    transform: translateY(0);
+  }
+
+  .brand-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    background: linear-gradient(45deg, #bcdcd2, #a8bc9d, #87afad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    padding: 0.5rem 0;
+  }
+
+  .brand-name::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #488471, #536649, #15302F);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+
+  .brand-name:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  .navbar-menu {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+  }
+
+  .nav-link::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(45deg, 
+      rgba(72, 132, 113, 0.2),
+      rgba(83, 102, 73, 0.2)
+    );
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s ease;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .nav-link:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+
+  .nav-link:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+
+  .nav-link.active {
+    opacity: 1;
+  }
+
+  .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: #488471;
+    border-radius: 50%;
+    transform: translateX(-50%);
+  }

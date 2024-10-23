@@ -1,0 +1,20 @@
+<div class="navbar-container" [class.scrolled]="isScrolled">
+    <div class="navbar-trigger"></div>
+    
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a routerLink="/" class="brand-name">DAWFlix</a>
+      </div>
+      <div class="navbar-menu">
+        <a routerLink="/" class="nav-link" routerLinkActive="active">
+          <i class="fas fa-home"></i>
+        </a>
+        <a routerLink="/shows" class="nav-link" routerLinkActive="active">
+          <i class="fas fa-tv"></i>
+        </a>
+        <a routerLink="/movies" class="nav-link" routerLinkActive="active">
+          <i class="fas fa-film"></i>
+        </a>
+      </div>
+    </nav>
+  </div>
