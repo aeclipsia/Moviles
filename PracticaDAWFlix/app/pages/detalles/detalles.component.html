@@ -1,0 +1,22 @@
+<div class="main" *ngIf="pelicula" [ngStyle]="{'background-image':'url('+pelicula.imagewide+')'}">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="movie-info">
+            <h1 class="movie-title">{{ pelicula.titulo }}</h1>
+            <div class="movie-meta">
+                <div class="meta-left">
+                    <span class="movie-year">{{ pelicula.year }}</span>
+                    <span class="rating">
+                        <span class="rating-value">{{ pelicula.rating }}</span>
+                        <span class="rating-star">★</span>
+                    </span>
+                </div>
+                <div class="meta-right">
+                    <span class="director-label">Director:</span>
+                    <span class="director-name">{{ pelicula.director }}</span>
+                </div>
+            </div>
+            <p class="movie-synopsis">{{ pelicula.sinopsiscompleto }}</p>
+        </div>
+    </div>
+</div>
