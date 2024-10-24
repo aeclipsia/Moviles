@@ -29,14 +29,7 @@
 
 .movie-info {
     max-width: 50%;
-    background: linear-gradient(180deg,
-            rgba(21, 48, 47, 0.9) 0%,
-            rgba(72, 132, 113, 0.2) 60%,
-            rgba(83, 102, 73, 0) 100%);
-    backdrop-filter: blur(20px);
-    border-radius: 12px;
-    padding: 2.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: transparent;
 }
 
 .movie-title {
@@ -53,6 +46,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .meta-left {

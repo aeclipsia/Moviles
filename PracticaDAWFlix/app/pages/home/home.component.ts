@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { IPeliculas } from '../peliculas/IPeliculas';
+import { PeliculasService } from '../../services/peliculas.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,11 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  movieTitle: string = 'Kimi no Nawa';
-  movieEnglishTitle: string = 'Your Name';
-  movieYear: number = 2016;
-  movieDuration: string = '1h 46min';
-  movieGenre: string = 'Animation, Drama, Fantasy';
-  movieDescription: string =
-    'Two strangers find themselves linked in a bizarre way. When a connection forms, will distance be the only thing to keep them apart?';
+
 }

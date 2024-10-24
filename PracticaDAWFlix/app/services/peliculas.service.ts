@@ -279,4 +279,8 @@ export class PeliculasService {
   getPelicula(i: number): IPeliculas | undefined {
     return this.peliculas[i];
   }
+
+  getNumPelis():number{
+    return this.peliculas.length;
+  }
 }
