@@ -24,12 +24,15 @@ export class IAVisualService {
   getOne(title: string): Observable<IMedia> {
     return this.http.get<IMedia[]>('/data/peliculas.json').pipe(
       switchMap((peliculas) => {
+        // Try to find the item in the first file
         const foundItem = peliculas.find((item) => item['titulo'] === title);
 
+        // If found in the first file, return it immediately
         if (foundItem) {
           return of(foundItem);
         }
 
+        // Otherwise, search in the second file
         return this.http
           .get<any[]>('/data/series.json')
           .pipe(

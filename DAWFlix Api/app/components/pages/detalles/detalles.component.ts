@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { Location } from '@angular/common';
 import { IAVisualService } from '../../../services/iavisual.service';
 import { IMedia } from '../../../interfaces/IMedia';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-detalles',
@@ -23,18 +22,19 @@ export class DetallesComponent {
   ) {}
 
   ngOnInit(): void {
-    let titulo = '';
-
     this.route.params.subscribe((params) => {
-      titulo = params['titulo'];
-      this.getPelicula(titulo);
+      const titulo = params['titulo'];
+      this.pelicula = this.peliculas.getOne(titulo);
     });
-  }
-
-  getPelicula(titulo: string): void {
-    this.peliculas.getOne(titulo).subscribe((data: IMedia) => {
-      this.pelicula = data;
-    });
+    this.peliculas.getOne(titulo).subscribe(
+      (result) => {
+        this.item = result;
+        console.log(this.item);
+      },
+      (error) => {
+        console.error('Error fetching data:', error);
+      }
+    );
   }
 
   goBack(): void {
