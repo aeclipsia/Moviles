@@ -4,6 +4,9 @@
   [ngStyle]="{ 'background-image': 'url(' + pelicula.imagewide + ')' }"
 >
   <div class="overlay"></div>
+  <div class="back-button" (click)="goBack()">
+    <i class="fa-solid fa-chevron-left"></i>
+  </div>
   <div class="content">
     <div class="movie-info">
       <h1 class="movie-title">{{ pelicula.titulo }}</h1>

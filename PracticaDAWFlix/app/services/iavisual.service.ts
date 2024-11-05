@@ -359,7 +359,7 @@ export class IAVisualService {
       director: 'Stephen Hillenburg',
       year: 1999,
       image: 'assets/series/sponge.jpg',
-      imagewide: 'assets/series/spongebob-wide.jpg',
+      imagewide: 'assets/series/sponge-wide.jpg',
       plot: 'Una esponja submarina vive aventuras extravagantes con sus amigos.',
       rating: 8.2,
       sinopsiscompleto:
@@ -419,7 +419,7 @@ export class IAVisualService {
       director: 'David Benioff, D.B. Weiss',
       year: 2011,
       image: 'assets/series/got.jpg',
-      imagewide: 'assets/game-of-thrones-wide.jpg',
+      imagewide: 'assets/series/got-wide.jpg',
       plot: 'Familias nobles luchan por el control del Trono de Hierro.',
       rating: 9.2,
       sinopsiscompleto:
@@ -431,7 +431,7 @@ export class IAVisualService {
       director: 'Kenji Nagasaki',
       year: 2016,
       image: 'assets/series/mha.jpg',
-      imagewide: 'assets/my-hero-academia-wide.jpg',
+      imagewide: 'assets/series/mha-wide.jpg',
       plot: 'Un chico sin poderes se inscribe en una academia de héroes.',
       rating: 8.5,
       sinopsiscompleto:
@@ -443,7 +443,7 @@ export class IAVisualService {
       director: 'Lauren Schmidt Hissrich',
       year: 2019,
       image: 'assets/series/witcher.jpg',
-      imagewide: 'assets/witcher-wide.jpg',
+      imagewide: 'assets/series/witcher-wide.jpg',
       plot: 'Un cazador de monstruos viaja por un mundo de fantasía.',
       rating: 8.2,
       sinopsiscompleto:
@@ -455,7 +455,7 @@ export class IAVisualService {
       director: 'Matt Groening',
       year: 1989,
       image: 'assets/series/simpson.jpg',
-      imagewide: 'assets/simpsons-wide.jpg',
+      imagewide: 'assets/series/simpson-wide.jpg',
       plot: 'Una comedia animada sobre una familia disfuncional en Springfield.',
       rating: 8.6,
       sinopsiscompleto:
@@ -467,7 +467,7 @@ export class IAVisualService {
       director: 'Eric Kripke',
       year: 2019,
       image: 'assets/series/boys.jpg',
-      imagewide: 'assets/the-boys-wide.jpg',
+      imagewide: 'assets/series/boys-wide.jpg',
       plot: 'Un grupo lucha contra superhéroes corruptos.',
       rating: 8.7,
       sinopsiscompleto:
@@ -479,7 +479,7 @@ export class IAVisualService {
       director: 'Shinichirō Watanabe',
       year: 1998,
       image: 'assets/series/cowboy.jpg',
-      imagewide: 'assets/cowboy-bebop-wide.jpg',
+      imagewide: 'assets/series/cowboy-wide.jpg',
       plot: 'Cazarrecompensas intergalácticos enfrentan peligros en el futuro.',
       rating: 8.9,
       sinopsiscompleto:
@@ -491,7 +491,7 @@ export class IAVisualService {
       director: 'Peter Morgan',
       year: 2016,
       image: 'assets/series/crown.jpg',
-      imagewide: 'assets/the-crown-wide.jpg',
+      imagewide: 'assets/series/crown-wide.jpg',
       plot: 'La vida y reinado de la reina Isabel II.',
       rating: 8.6,
       sinopsiscompleto:
@@ -503,7 +503,7 @@ export class IAVisualService {
       director: 'Steven Knight',
       year: 2013,
       image: 'assets/series/peaky.jpg',
-      imagewide: 'assets/peaky-blinders-wide.jpg',
+      imagewide: 'assets/series/peaky-wide.jpg',
       plot: 'Una familia criminal británica en la era post-Primera Guerra Mundial.',
       rating: 8.8,
       sinopsiscompleto:
@@ -515,7 +515,7 @@ export class IAVisualService {
       director: 'Pendleton Ward',
       year: 2010,
       image: 'assets/series/adventure.jpg',
-      imagewide: 'assets/adventure-time-wide.jpg',
+      imagewide: 'assets/series/adventure-wide.jpg',
       plot: 'Un niño y su perro viven aventuras en un mundo mágico.',
       rating: 8.7,
       sinopsiscompleto:
@@ -527,7 +527,7 @@ export class IAVisualService {
       director: 'Tetsurō Araki',
       year: 2006,
       image: 'assets/series/death.jpg',
-      imagewide: 'assets/death-note-wide.jpg',
+      imagewide: 'assets/series/death-wide.jpg',
       plot: 'Un estudiante obtiene un cuaderno que mata a cualquiera cuyo nombre escriba.',
       rating: 9.0,
       sinopsiscompleto:
@@ -539,7 +539,7 @@ export class IAVisualService {
       director: 'Alex Hirsch',
       year: 2012,
       image: 'assets/series/grav.jpg',
-      imagewide: 'assets/gravity-falls-wide.jpg',
+      imagewide: 'assets/series/grav-wide.jpg',
       plot: 'Dos hermanos descubren misterios en un pueblo extraño.',
       rating: 8.9,
       sinopsiscompleto:
@@ -551,7 +551,7 @@ export class IAVisualService {
       director: 'Craig McCracken',
       year: 1998,
       image: 'assets/series/ppg.jpg',
-      imagewide: 'assets/powerpuff-girls-wide.jpg',
+      imagewide: 'assets/series/ppg-wide.jpg',
       plot: 'Tres niñas con superpoderes protegen su ciudad.',
       rating: 7.2,
       sinopsiscompleto:
@@ -563,7 +563,7 @@ export class IAVisualService {
       director: 'Matt Groening',
       year: 1999,
       image: 'assets/series/futurama.jpg',
-      imagewide: 'assets/futurama-wide.jpg',
+      imagewide: 'assets/series/futurama-wide.jpg',
       plot: 'Un repartidor congelado despierta en un mundo futurista.',
       rating: 8.5,
       sinopsiscompleto:
@@ -575,7 +575,7 @@ export class IAVisualService {
       director: 'Glen Murakami',
       year: 2003,
       image: 'assets/series/teen.jpg',
-      imagewide: 'assets/teen-titans-wide.jpg',
+      imagewide: 'assets/series/teen-wide.jpg',
       plot: 'Un equipo de jóvenes superhéroes protege la ciudad.',
       rating: 7.9,
       sinopsiscompleto:
@@ -587,7 +587,7 @@ export class IAVisualService {
       director: 'Raphael Bob-Waksberg',
       year: 2014,
       image: 'assets/series/bojack.jpg',
-      imagewide: 'assets/bojack-horseman-wide.jpg',
+      imagewide: 'assets/series/bojack-wide.jpg',
       plot: 'Una estrella de la televisión venida a menos enfrenta problemas personales.',
       rating: 8.8,
       sinopsiscompleto:

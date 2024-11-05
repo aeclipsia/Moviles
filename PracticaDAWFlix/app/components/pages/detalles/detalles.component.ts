@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { Location } from '@angular/common';
 import { IAVisualService } from '../../../services/iavisual.service';
 import { IMedia } from '../../../interfaces/IMedia';
 
 @Component({
   selector: 'app-detalles',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './detalles.component.html',
   styleUrl: './detalles.component.css',
 })
@@ -16,7 +17,8 @@ export class DetallesComponent {
 
   constructor(
     private route: ActivatedRoute,
-    private peliculas: IAVisualService
+    private peliculas: IAVisualService,
+    private location: Location
   ) {}
 
   ngOnInit(): void {
@@ -24,5 +26,9 @@ export class DetallesComponent {
       const titulo = params['titulo'];
       this.pelicula = this.peliculas.getOne(titulo);
     });
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 }
