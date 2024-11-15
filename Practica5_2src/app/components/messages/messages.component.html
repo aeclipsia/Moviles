@@ -1,0 +1,15 @@
+<div class="messages-wrapper container">
+  <div class="card" style="width: 18rem" *ngFor="let m of mensajes">
+    <div class="card-body">
+      <h5 class="card-title">{{ m.asunto }}</h5>
+      <p class="card-text">{{ m.id }}</p>
+      <p class="card-text">Nombre: {{ m.nombre }}</p>
+      <p *ngIf="selectedmessage === m.id" class="card-text">
+        Texto: {{ m.texto }}
+      </p>
+      <a href="#" (click)="showMessage(m.id)" class="btn btn-primary"
+        >Detalles</a
+      >
+    </div>
+  </div>
+</div>
