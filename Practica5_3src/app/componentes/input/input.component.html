@@ -1,0 +1,28 @@
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Añadir Personas</span>
+  </div>
+</nav>
+<div class="input-group mb-3">
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Username"
+    aria-label="Username"
+    aria-describedby="button-addon2"
+    [(ngModel)]="nombre"
+  />
+  <button
+    class="btn btn-outline-secondary add"
+    type="button"
+    id="button-addon2"
+    (click)="add()"
+  >
+    Add
+  </button>
+  <div class="button-wrapper">
+    <button type="button" class="btn btn-primary volver" routerLink="">
+      Volver
+    </button>
+  </div>
+</div>
