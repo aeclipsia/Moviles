@@ -1,0 +1,35 @@
+<h4>MEDIA</h4>
+<div class="todo caja">
+  <div id="primero" class="caja" *ngFor="let i of prota">
+    <img class="imagen" [src]="'/img/' + i.image" />
+    <h5 class="card-title">{{ i.name }}</h5>
+  </div>
+  <div id="cuerpo">
+    <table class="tabla">
+      <tr>
+        <td *ngFor="let i of extra">
+          <div id="imagenes" class="caja" (click)="showInfo(i.id)">
+            <img [src]="'/img/' + i.image" class="img" alt="..." />
+            <div>
+              <br />
+              <h5 class="card-title">{{ i.name }}</h5>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<br />
+
+<h4>SUMARIO</h4>
+
+<div class="todo caja" *ngIf="current != undefined">
+  <div id="unosolo">
+    <h3 class="card-title">NAME: {{ current.name }}</h3>
+    <h5>STATUS: {{ current.status }}</h5>
+    <h5>GENDER: {{ current.gender }}</h5>
+    <h5>SPECIES: {{ current.species }}</h5>
+  </div>
+</div>
+<br /><br />
